@@ -1,0 +1,26 @@
+$(document).ready(function() {
+	$(".sucess").click(function(){
+		$(".alert-success").show();
+		$(".alert-info").hide();
+		$(".alert-warning").hide();
+		$(".alert-danger").hide();
+	});
+	$(".info").click(function(){
+		$(".alert-success").hide();
+		$(".alert-info").show();
+		$(".alert-warning").hide();
+		$(".alert-danger").hide();
+	});
+	$(".warning").click(function(){
+		$(".alert-success").hide();
+		$(".alert-info").hide();
+		$(".alert-warning").show();
+		$(".alert-danger").hide();
+	});
+	$(".danger").click(function(){
+		$(".alert-success").hide();
+		$(".alert-info").hide();
+		$(".alert-warning").hide();
+		$(".alert-danger").show();
+	});
+});

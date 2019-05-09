@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-fixed-top{
+	margin-bottom:80px;
+}
+
+h2 { 
+	position:relative;
+	padding-top:80px;
+}
+.topMargin{
+	margin-top:20%
+}
+.page-head{
+	margin-top:20%;
+}
+.border {
+    border: 1px solid red;
+}
+
+.navbar-default .navbar-toggle {
+    float: left;
+    margin-left: 10px;
+}
+
+.border-wh {
+    border: 1px solid white;
+}
+
+.icon {
+    margin: 10px -24px 0px 10px;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.menu-wrap {
+    margin-left: 1px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: brown;
+}
+
+.form-control {
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+}
+
+.badge {
+    margin-top: -40px;
+    margin-left: -35px;
+    color: red;
+    background: white;
+}
+.active {
+    margin-top: 3px;
+}
+
+
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.logo-img img {
+    margin-top: 15px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.data-alert {
+	margin:0 auto;
+	
+}
+
+.alert {
+    display: none;
+}
+
+#alerts button {
+    padding: 10px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+.count {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+
+.envelope-content {
+    font-size: 40px;
+}
+
+.badge-content {
+    margin: 0 auto;
+
+}
+
+.menu-bar {
+    margin: 0 auto;
+   
+}
+
+.wellsize {
+   
+    margin: 0 auto;
+}
+
+.panel-wrap {
+      margin: 0 auto;
+}
+
+.mediacontent {
+  
+    margin: 0 auto;
+}
+
+.envelopewrap {
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+        margin-right: 100px;
+    }
+    .logo-img {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .menu-wrap li a {
+        margin-top: 5px;
+    }
+    .logo-img img {
+        margin-left: -10px;
+        margin-top: 15px;
+    }
+    .page-head {
+        margin-left: 12px;
+    }
+    .data-alert {
+        margin: 7px;
+    }
+    .label-content {
+        margin-left: 15px;
+    }
+    .progress {
+        width: 100%;
+        margin-left: -55px;
+    }
+    
+}

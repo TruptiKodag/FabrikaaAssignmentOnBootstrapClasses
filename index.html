@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fabrikaa With bootstrap</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default bg-red navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+                <span class="logo-img" href="#">
+                        <img src="images/Logo.png" alt="fab" height="22">
+				</span>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav menu-wrap">
+                    <li><a href="#head">PAGE HEADER<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#alerts">ALERT</a></li>
+                    <li><a href="#bar">PROGRESS</a></li>
+                    <li><a href="#icons">BADGE</a></li>
+                    <li><a href="#label-wrap">LABEL</a></li>
+                    <li><a href="#paginate">PAGINATION</a></li>
+                    <li><a href="#breadcrum">BREADCRUMB</a></li>
+                    <li><a href="#wells">WELL</a></li>
+                    <li><a href="#panels">PANEL</a></li>
+                    <li><a href="#medias">MEDIA</a></li>
+                    <li><a href="#input-group">INP-GROUP</a></li>
+                    <li><a href="#lead-data">LEAD</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- ------------------page-header----------------------- -->
+        <div id="head">
+                <div class="page-header page-head">
+				<h2 id="head">Page Header</h2>
+                    <h1>Begin Your Journey With Fabrikaa Today<small>  With Fabrikaa as your business backbone, there is only one way your garments business can go- UPWARDS. Whether you are a screen printer who needs varieties of blank t-shirts to cater to your customers' requirements or a garment manufacturing unit needing fabric for your production-having an account with Fabrikaa will help you g and prosper and achieve your business goals. Sign Up for an account today.</small></h1>
+                </div>
+
+            </div>
+
+        <!----------------------page-header-end------------------------->
+        <!----------------------alerts------------------------->
+        <div >
+		<div class="page-header data-alert">
+                <h2 id="alerts">Alerts</h2>
+                <input type="button" value="Success" class="btn-success btn btn-default sucess" />
+                <input type="button" value="Info" class="info btn-info btn btn-default" />
+                <input type="button" value="Warning" class="warning btn-warning btn btn-default" />
+                <input type="button" value="Danger" class="danger btn-danger btn btn-default" />
+                <div class="alert alert-success success mt10">
+                    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                </div>
+                <div class="alert alert-info mt10">
+                    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                </div>
+                <div class="alert alert-warning mt10">
+                    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                </div>
+                <div class="alert alert-danger mt10">
+                    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                </div>
+		</div>
+        </div>
+        <!----------------------alerts-end------------------------->
+        <!----------------------progress-bar------------------------->
+        <div >
+            <div class="progressbar page-header">
+                <h2 id="bar">Progress Bar</h2>
+                <span>Product</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                        0%
+                    </div>
+                </div>
+                <span>Services</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+                        2%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------progress-bar-end------------------------->
+        <!----------------------badge------------------------->
+        <div class="badge-content page-header" id="icons">
+            <h2>Badge</h2>
+            <i class="glyphicon glyphicon-envelope  envelope-content aria-hidden=true">
+						<span class="badge count">4</span>
+					</i>
+
+        </div>
+        <!----------------------badge-end------------------------->
+        <!----------------------labels------------------------->
+        <div class="label-content page-header" id="label-wrap">
+            <h2>Label</h2>
+            <h3>Our Product Range<span class="label label-default">widest product range</span></h3>
+        </div>
+        <!----------------------labels-end------------------------>
+        <!----------------------pagination------------------------->
+        <div class=" page-header" id="paginate">
+            <h2>Pagination</h2>
+            <nav aria-label="Page navigation">
+                <ul class="pagination  paging">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!----------------------pagination-end------------------------->
+        <!----------------------breadcrumb------------------------->
+        <div class=" menu-bar page-header" id="breadcrum">
+            <h2>Breadcrumb</h2>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+        </div>
+        <!----------------------breadcrumb-end------------------------->
+        <!----------------------well------------------------->
+        <div class=" wellsize m20 page-header" id="wells">
+            <h2>Well Size</h2>
+            <div class="well well-sm">Small Well</div>
+            <div class="well">Normal Well</div>
+            <div class="well well-lg">Large Well</div>
+        </div>
+        <!----------------------well-end------------------------->
+        <!----------------------panel------------------------->
+        <div class=" panel-wrap m20 page-header" id="panels">
+            <h2>Panel</h2>
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel Heading</div>
+                <div class="panel-body">Panel Content</div>
+                <div class="panel-footer">Panel Footer</div>
+            </div>
+        </div>
+        <!----------------------panel-end------------------------->
+        <!----------------------media------------------------->
+        <div class=" mediacontent m20 page-header" id="medias">
+            <h2>Media</h2>
+            <!-- Left-aligned media object -->
+            <div class="media">
+                <div class="media-left">
+                    <img src="images/flower.jpg" class="media-object" style="width:50px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Left-aligned</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Right-aligned media object -->
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="media-heading">Right-aligned</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="media-right">
+                    <img src="images/flower.jpg" class="media-object" style="width:50px">
+                </div>
+            </div>
+        </div>
+        <!----------------------media-end------------------------->
+        <!----------------------input-group-addon------------------------->
+        <div class=" page-header" id="input-group">
+            <h2>Input-Group</h2>
+            <form class="m20">
+                <div class="input-group login">
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Sign up for our Newsletter!">
+                    <span class="input-group-addon mailbox">
+									<i class="glyphicon glyphicon-envelope envelope-wrap" aria-hidden="true"></i>
+								</span>
+                </div>
+            </form>
+        </div>
+        <!----------------------input-group-addon-end------------------------->
+        <!----------------------lead------------------------>
+        <div class=" lead-wrap page-header" id="lead-data">
+            <h2>Lead</h2>
+            <p class="lead m20">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+        </div>
+        <!----------------------lead-end------------------------>
+    </div>
+</body>
+
+</html>
