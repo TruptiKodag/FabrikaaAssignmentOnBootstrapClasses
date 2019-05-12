@@ -43,7 +43,6 @@ $(document).ready(function() {
     });
 
     $("#resetBtn").click(function() {
-        debugger
         var elem = document.getElementById("myBar");
         var width = progress;
         var id = setInterval(frame, 10);
