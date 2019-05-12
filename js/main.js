@@ -25,6 +25,8 @@ $(document).ready(function() {
     });
 
     var progress = 0;
+    $(".progress-success").hide();
+
     $("#increaseBtn").click(function() {
         if (progress === 100) {
             $("#increaseBtn")[0].disabled = true;
@@ -33,16 +35,16 @@ $(document).ready(function() {
             progress += 25;
             if (progress === 100) {
                 $("#increaseBtn")[0].disabled = true;
+                $(".progress-success").show();
+                setTimeout(function() {
+                    $(".progress-success").show()
+                }, 20);
             }
         }
     });
-    $("#completeBtn").click(function() {
-        move(100);
-        progress = 100;
-        $("#increaseBtn")[0].disabled = true;
-    });
 
     $("#resetBtn").click(function() {
+        $(".progress-success").hide();
         var elem = document.getElementById("myBar");
         var width = progress;
         var id = setInterval(frame, 10);
