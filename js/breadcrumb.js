@@ -1,16 +1,16 @@
-$(document).ready(function() {
-    $(".stud-info").click(function() {
+$(document).ready(function () {
+    $(".stud-info").click(function () {
         $(".stud-data").show();
         $(".edu-data").hide();
     });
 
-    $(".edu-info").click(function() {
+    $(".edu-info").click(function () {
         $(".edu-data").show();
         $(".stud-data").hide();
     });
 
     var stdarr = [];
-    $(".btnnext").click(function() {
+    $(".btnnext").click(function () {
         $(".edu-data").show();
         console.log('.edu-data');
         $(".stud-data").hide();
@@ -22,11 +22,11 @@ $(document).ready(function() {
         console.log(stdarr);
         console.log(fname);
     });
-    $(".btnPrevious").click(function() {
+    $(".btnPrevious").click(function () {
         $('.edu-data').hide();
         $('.stud-data').show();
     });
-    $(".btnSubmit").click(function() {
+    $(".btnSubmit").click(function () {
         var stream = $("#stream").val();
         var branch = $("#branch").val();
         var institute = $("#institute").val();
