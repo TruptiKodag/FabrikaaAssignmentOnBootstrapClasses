@@ -12,7 +12,7 @@ $(document).ready(function() {
     var stdarr = [];
     $(".btnnext").click(function() {
         $(".edu-data").show();
-		console.log('.edu-data');
+        console.log('.edu-data');
         $(".stud-data").hide();
         var fname = $("#fname").val();
         var lname = $("#lname").val();
@@ -22,10 +22,10 @@ $(document).ready(function() {
         console.log(stdarr);
         console.log(fname);
     });
-	$(".btnPrevious").click(function(){
-		$('.edu-data').hide();
-			$('.stud-data').show();
-	});
+    $(".btnPrevious").click(function() {
+        $('.edu-data').hide();
+        $('.stud-data').show();
+    });
     $(".btnSubmit").click(function() {
         var stream = $("#stream").val();
         var branch = $("#branch").val();
