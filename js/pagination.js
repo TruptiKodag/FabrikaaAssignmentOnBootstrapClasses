@@ -29,7 +29,7 @@ var person = [{
         "lastName": "Nalwade",
         "phoneNo": "0604070001",
         "emailId": "sangita.nalwade@gmail.com",
-        "address": "pune"
+        "address": "Pune"
     }, {
         "firstName": "Sandy",
         "lastName": "Chavan",
@@ -122,7 +122,7 @@ var person = [{
         "address": "Kerala"
     }, {
         "firstName": "Hardik",
-        "lastName": "Pandhya",
+        "lastName": "Pandya",
         "phoneNo": "3465768798",
         "emailId": "hardik.pandhya@gmail.com",
         "address": "Banglore"
@@ -179,7 +179,7 @@ function loadData(key) {
             }
             currentPage = next;
             break;
-		
+
     }
     var tbody = document.getElementById('tbody');
     tbody.innerHTML = '';
@@ -189,17 +189,17 @@ function loadData(key) {
     });
     var pages = document.getElementsByName('page');
     pages.forEach(pg => {
-        if (pg.id == "page" + currentPage) 
-		{
-			console.log(pg.id);
-			console.log(currentPage);
+        if (pg.id == "page" + currentPage) {
+            console.log(pg.id);
+            console.log(currentPage);
             pg.className = "active";
         } else {
             pg.className = '';
         }
-	
+
     });
 }
+
 function createStudentDetail(person) {
     var tr = document.createElement('tr');
     var firstName = document.createElement('td');
@@ -224,16 +224,17 @@ function createStudentDetail(person) {
 
 
 function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 10;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 50) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+
+    function frame() {
+        if (width >= 50) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1 + '%';
+        }
     }
-  }
 }
