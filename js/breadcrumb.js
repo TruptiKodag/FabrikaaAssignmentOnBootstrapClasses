@@ -27,6 +27,7 @@ $(document).ready(function() {
     });
     $(".btnSubmit").click(function() {
         $(".edu-data").hide();
+        $('.edu-info').css('display', 'none');
         $(".stud-data").show();
 
         $(".table1").show();
