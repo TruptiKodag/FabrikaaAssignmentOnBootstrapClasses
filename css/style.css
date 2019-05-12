@@ -160,6 +160,14 @@ iframe {
     border: none;
 }
 
+.stud-info {
+    display: block;
+}
+
+.breadcrumb li {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .navbar-nav {
         float: right;

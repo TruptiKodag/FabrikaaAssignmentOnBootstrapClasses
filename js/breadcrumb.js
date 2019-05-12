@@ -11,24 +11,21 @@ $(document).ready(function() {
 
 
     $(".btnnext").click(function() {
+        $('.edu-info').show();
+        $('.edu-info').css('display', 'inline-block');
         $(".edu-data").show();
         console.log('.edu-data');
         $(".stud-data").hide();
-        var fname = $("#fname").val();
-        var lname = $("#lname").val();
-        var contact = $("#contact").val();
+
 
 
     });
     $(".btnPrevious").click(function() {
         $('.edu-data').hide();
+        $('.edu-info').hide();
         $('.stud-data').show();
     });
     $(".btnSubmit").click(function() {
-        var stream = $("#stream").val();
-        var branch = $("#branch").val();
-        var institute = $("#institute").val();
-
         $(".edu-data").hide();
         $(".stud-data").show();
 
@@ -55,12 +52,16 @@ $(document).ready(function() {
         tr.appendChild(branch);
         tr.appendChild(institute);
         tbody.appendChild(tr);
-        $("#fname").val(null);
-        $("#lname").val(null);
-        $("#contact").val(null);
-        $("#stream").val(null);
-        $("#branch").val(null);
-        $("#institute").val(null);
+        clear();
         return tr;
     });
 });
+
+function clear() {
+    $("#fname").val(null);
+    $("#lname").val(null);
+    $("#contact").val(null);
+    $("#stream").val(null);
+    $("#branch").val(null);
+    $("#institute").val(null);
+}
