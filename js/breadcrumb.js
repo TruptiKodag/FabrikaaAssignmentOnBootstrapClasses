@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".stud-data").hide();
     });
 
-    var stdarr = [];
+
     $(".btnnext").click(function() {
         $(".edu-data").show();
         console.log('.edu-data');
@@ -18,9 +18,7 @@ $(document).ready(function() {
         var lname = $("#lname").val();
         var contact = $("#contact").val();
 
-        stdarr.push(fname, lname, contact);
-        console.log(stdarr);
-        console.log(fname);
+
     });
     $(".btnPrevious").click(function() {
         $('.edu-data').hide();
@@ -30,16 +28,10 @@ $(document).ready(function() {
         var stream = $("#stream").val();
         var branch = $("#branch").val();
         var institute = $("#institute").val();
-        stdarr.push(stream, branch, institute);
 
         $(".edu-data").hide();
         $(".stud-data").show();
-        $("#fname").val(null);
-        $("#lname").val(null);
-        $("#contact").val(null);
-        $("#stream").val(null);
-        $("#branch").val(null);
-        $("#institute").val(null);
+
         $(".table1").show();
         var tbody = document.getElementById("tbody");
         var tr = document.createElement('tr');
@@ -50,12 +42,12 @@ $(document).ready(function() {
         var branch = document.createElement('td');
         var institute = document.createElement('td');
 
-        fname.innerHTML = stdarr[0];
-        lname.innerHTML = stdarr[1];
-        contact.innerHTML = stdarr[2];
-        stream.innerHTML = stdarr[3];
-        branch.innerHTML = stdarr[4];
-        institute.innerHTML = stdarr[5];
+        fname.innerHTML = $("#fname").val();
+        lname.innerHTML = $("#lname").val();
+        contact.innerHTML = $("#contact").val();
+        stream.innerHTML = $("#stream").val();;
+        branch.innerHTML = $("#branch").val();
+        institute.innerHTML = $("#institute").val();
         tr.appendChild(fname);
         tr.appendChild(lname);
         tr.appendChild(contact);
@@ -63,7 +55,12 @@ $(document).ready(function() {
         tr.appendChild(branch);
         tr.appendChild(institute);
         tbody.appendChild(tr);
-        stdarr = []
+        $("#fname").val(null);
+        $("#lname").val(null);
+        $("#contact").val(null);
+        $("#stream").val(null);
+        $("#branch").val(null);
+        $("#institute").val(null);
         return tr;
     });
 });
