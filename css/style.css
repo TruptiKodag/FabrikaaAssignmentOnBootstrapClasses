@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
-.navbar-fixed-top{
-	margin-bottom:80px;
+.navbar-fixed-top {
+    margin-bottom: 80px;
 }
 
-h2 { 
-	position:relative;
-	padding-top:80px;
+h2 {
+    position: relative;
+    padding-top: 80px;
 }
-.topMargin{
-	margin-top:20%
+
+.topMargin {
+    margin-top: 20%
 }
-.page-head{
-	margin-top:20%;
+
+.page-head {
+    margin-top: 20%;
 }
+
 .border {
     border: 1px solid red;
 }
@@ -67,11 +70,10 @@ h2 {
     color: red;
     background: white;
 }
+
 .active {
     margin-top: 3px;
 }
-
-
 
 .navbar-default .navbar-toggle {
     border: none;
@@ -90,8 +92,7 @@ h2 {
 }
 
 .data-alert {
-	margin:0 auto;
-	
+    margin: 0 auto;
 }
 
 .alert {
@@ -105,6 +106,7 @@ h2 {
 .mt10 {
     margin-top: 10px;
 }
+
 .count {
     position: absolute;
     top: 30px;
@@ -117,30 +119,46 @@ h2 {
 
 .badge-content {
     margin: 0 auto;
-
 }
 
 .menu-bar {
     margin: 0 auto;
-   
 }
 
 .wellsize {
-   
     margin: 0 auto;
 }
 
 .panel-wrap {
-      margin: 0 auto;
+    margin: 0 auto;
 }
 
 .mediacontent {
-  
     margin: 0 auto;
 }
 
 .envelopewrap {
     font-size: 30px;
+}
+
+.breadcrumbIframe {
+    width: 80vw;
+    height: 100vh;
+}
+
+.stud-data,
+.edu-data,
+.table1 {
+    display: none;
+}
+
+.PaginationIframe {
+    width: 80vw;
+    height: 100vh;
+}
+
+iframe {
+    border: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -174,5 +192,4 @@ h2 {
         width: 100%;
         margin-left: -55px;
     }
-    
 }

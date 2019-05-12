@@ -35,7 +35,7 @@
                     <li><a href="#icons">BADGE</a></li>
                     <li><a href="#label-wrap">LABEL</a></li>
                     <li><a href="#paginate">PAGINATION</a></li>
-                    <li><a href="#breadcrum">BREADCRUMB</a></li>
+                    <li><a href="#breadcrum-1">BREADCRUMB</a></li>
                     <li><a href="#wells">WELL</a></li>
                     <li><a href="#panels">PANEL</a></li>
                     <li><a href="#medias">MEDIA</a></li>
@@ -48,17 +48,15 @@
     <div class="container">
         <!-- ------------------page-header----------------------- -->
         <div id="head">
-                <div class="page-header page-head">
-				<h2 id="head">Page Header</h2>
-                    <h1>Begin Your Journey With Fabrikaa Today<small>  With Fabrikaa as your business backbone, there is only one way your garments business can go- UPWARDS. Whether you are a screen printer who needs varieties of blank t-shirts to cater to your customers' requirements or a garment manufacturing unit needing fabric for your production-having an account with Fabrikaa will help you g and prosper and achieve your business goals. Sign Up for an account today.</small></h1>
-                </div>
-
+            <div class="page-header page-head">
+                <h2 id="head">Page Header</h2>
+                <h1>Begin Your Journey With Fabrikaa Today<small>  With Fabrikaa as your business backbone, there is only one way your garments business can go- UPWARDS. Whether you are a screen printer who needs varieties of blank t-shirts to cater to your customers' requirements or a garment manufacturing unit needing fabric for your production-having an account with Fabrikaa will help you g and prosper and achieve your business goals. Sign Up for an account today.</small></h1>
             </div>
 
-        <!----------------------page-header-end------------------------->
-        <!----------------------alerts------------------------->
-        <div >
-		<div class="page-header data-alert">
+        </div>
+
+        <div>
+            <div class="page-header data-alert">
                 <h2 id="alerts">Alerts</h2>
                 <input type="button" value="Success" class="btn-success btn btn-default sucess" />
                 <input type="button" value="Info" class="info btn-info btn btn-default" />
@@ -76,29 +74,22 @@
                 <div class="alert alert-danger mt10">
                     <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
                 </div>
-		</div>
-        </div>
-        <!----------------------alerts-end------------------------->
-        <!----------------------progress-bar------------------------->
-        <div >
-            <div class="progressbar page-header">
-                <h2 id="bar">Progress Bar</h2>
-                <span>Product</span>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
-                        0%
-                    </div>
-                </div>
-                <span>Services</span>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
-                        2%
-                    </div>
-                </div>
             </div>
         </div>
-        <!----------------------progress-bar-end------------------------->
-        <!----------------------badge------------------------->
+
+        <div class="progressbar page-header">
+            <h2 id="bar">Progress Bar</h2>
+            <div class="progress">
+                <div id="myBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                    0%
+                </div>
+            </div>
+            <br>
+            <button id='increaseBtn' class="btn btn-default">Increase</button>
+            <button id='completeBtn' class="btn btn-default">Complete</button>
+            <button id='resetBtn' class="btn btn-default">Reset</button>
+        </div>
+
         <div class="badge-content page-header" id="icons">
             <h2>Badge</h2>
             <i class="glyphicon glyphicon-envelope  envelope-content aria-hidden=true">
@@ -106,56 +97,31 @@
 					</i>
 
         </div>
-        <!----------------------badge-end------------------------->
-        <!----------------------labels------------------------->
+
         <div class="label-content page-header" id="label-wrap">
             <h2>Label</h2>
             <h3>Our Product Range<span class="label label-default">widest product range</span></h3>
         </div>
-        <!----------------------labels-end------------------------>
-        <!----------------------pagination------------------------->
+
         <div class=" page-header" id="paginate">
             <h2>Pagination</h2>
-            <nav aria-label="Page navigation">
-                <ul class="pagination  paging">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <iframe src='./pagination.html' class='PaginationIframe'></iframe>
         </div>
-        <!----------------------pagination-end------------------------->
-        <!----------------------breadcrumb------------------------->
-        <div class=" menu-bar page-header" id="breadcrum">
+
+        <div class=" menu-bar page-header" id="breadcrum-1">
             <h2>Breadcrumb</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
-                <li class="active">Data</li>
-            </ol>
+            <iframe src='./breadcrumb.html' class='breadcrumbIframe'></iframe>
         </div>
-        <!----------------------breadcrumb-end------------------------->
-        <!----------------------well------------------------->
+
+
         <div class=" wellsize m20 page-header" id="wells">
             <h2>Well Size</h2>
             <div class="well well-sm">Small Well</div>
             <div class="well">Normal Well</div>
             <div class="well well-lg">Large Well</div>
         </div>
-        <!----------------------well-end------------------------->
-        <!----------------------panel------------------------->
+
+
         <div class=" panel-wrap m20 page-header" id="panels">
             <h2>Panel</h2>
             <div class="panel panel-default">
@@ -164,8 +130,8 @@
                 <div class="panel-footer">Panel Footer</div>
             </div>
         </div>
-        <!----------------------panel-end------------------------->
-        <!----------------------media------------------------->
+
+
         <div class=" mediacontent m20 page-header" id="medias">
             <h2>Media</h2>
             <!-- Left-aligned media object -->
@@ -191,8 +157,7 @@
                 </div>
             </div>
         </div>
-        <!----------------------media-end------------------------->
-        <!----------------------input-group-addon------------------------->
+
         <div class=" page-header" id="input-group">
             <h2>Input-Group</h2>
             <form class="m20">
@@ -204,14 +169,13 @@
                 </div>
             </form>
         </div>
-        <!----------------------input-group-addon-end------------------------->
-        <!----------------------lead------------------------>
+
         <div class=" lead-wrap page-header" id="lead-data">
             <h2>Lead</h2>
             <p class="lead m20">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
             <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
         </div>
-        <!----------------------lead-end------------------------>
+
     </div>
 </body>
 
